@@ -1,3 +1,9 @@
+a{
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
+
 /*paleta de cores*/
 .red{
     background-color: red;
@@ -8,7 +14,7 @@
 .purple{
     background-color: purple;
 }
-.preto, .menu_desc.preto, .menu_resume.preto{
+.preto, .menu_desc.preto, .menu_resume.preto a{
     color: black;
 }
 *{font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +27,7 @@ body{
 header{
     display: flex;
     justify-content: center;
-    height: 120px;
+    height: 80px;
     
 }
 .container{
@@ -39,7 +45,8 @@ display: flex;
 align-items: center;
 }
 .logo a img{
-    max-height: 120px;
+    height: 80px;
+    width: 95px;
 }
 nav li{
     padding: 0%;
@@ -115,9 +122,20 @@ display: flex;
 .banner1, .fm1{
     background-color: black;
     color:white;
+    transition: background-color 1s, color 1s;
+}
+.banner1:hover, .fm1:hover{
+    background-color: white;
+    color: black;
 }
 .banner2, .fm2{
     background-color: white;
+    color: black;
+    transition: background-color 1s, color 1s;
+}
+.banner2:hover, .fm2:hover{
+    background-color: black;
+    color: white;
 }
 .banner3, .fm3{
     background-color: red;
@@ -146,9 +164,17 @@ font-size: 25px;
     color: black;
     font-size: 12px;
 }
+.banner_options a:hover{
+    background-color: black;
+    color: white;
+}
 .banner_options .escuro{
     background-color: black;
     color: white;
+}
+.banner_options .escuro:hover{
+    background-color: white;
+    color: black;
 }
 #geral{
     display: flex;
@@ -281,13 +307,13 @@ aside{
     line-height: 20px;
     font-size: 14px;
     padding-left: 10px;
-    color: white;
+  
 }
 .menu_resume{
     line-height: 20px;
     font-size: 14px;
     padding-left: 10px;
-    color: white;
+
 }
 h4{
     font-size: 16px;
@@ -305,6 +331,7 @@ h4{
 width: 30px;
 height: 30px;
 border-radius: 100%;
+cursor: pointer;
 }
 .footer_areaitem:not(h4){
     font-size: 10px;
