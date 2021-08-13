@@ -1,4 +1,4 @@
-/*modificadores*/
+/*modificadores gerais*/
 .is--bg-white, .is--bg-black:hover{
     background-color: white;
     color: black;
@@ -13,8 +13,24 @@
     background-color: red;
     color: white;
 }
-
-
+.is--bar-white{
+    background-color:white;
+    width: 50px;
+    height: 6px;
+    margin-top: 10px;
+}
+.is--bar-black{
+    background-color:black;
+    width: 50px;
+    height: 6px;
+    margin-top: 10px;
+}
+.is--bar-white:hover{
+    background-color:black;
+}
+.is--bar-black:hover{
+    background-color:white;
+}
 /*Geral*/
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -181,12 +197,6 @@ main{
     background-color: white;
     display: inline;
 }
-.widget__title__bar{
-    background-color:black;
-    width: 50px;
-    height: 6px;
-    margin-top: 10px;
-}
 article .news__article1{
     grid-area: item1;
 }
@@ -217,37 +227,66 @@ article .news__comments{
 article .news__thumbnails img, article .news__thumbnails{
     width: 100%;
     height: 200px;
+    border-top-right-radius: 30px;
 }
 article .news__title{
-    color: black;
+    color: white;
     padding: 10px;
     font-size: 18px;
     text-align: center;
-    background-color: white;
+    background-color: #101010;
 }
 article .news__resume{
     color: grey;
     line-height: 20px;
     font-size: 14px;
-    background-color: white;
+    background-color: #101010;
     padding-bottom: 12px;
     text-align: center;
     cursor: pointer;
+    border-radius: inherit;
 }
 article a{
     text-decoration: none;
 }
 article{
-    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 10px;
 }
 .news__box{
     max-width: 300px;
     box-shadow: -6px 7px 7px 0px #bdbdbd;
     margin-bottom: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
+
+/*aside*/
+aside{
+    background-color: #d40203;
+    color: white;
+    width: 37%;
+}
+.negocios__list, .department__list{
+    background-color: black;
+    line-height: 28px;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.negocios__list{
+    border-bottom: 1px solid white;
+    display: block;
+    margin-right: 30px;
+    }
+
+.department__list li{
+    background-color: red;
+    list-style: none;
+    margin: 10px 65px 10px 0px;
+}    
 
 /*footer*/
 footer{
@@ -270,52 +309,22 @@ footer{
 .footer__areaitem{
     flex: 1;
 }
-.flexcoluna{
-flex-direction: column;
-}
-
-aside{
-    background-color: #d40203;
-    color: white;
-    width: 37%;
-}
-.list-negocios, .list-department{
-    background-color: black;
-    line-height: 28px;
-    font-size: 12px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-.list-negocios li{
-    border-bottom: 1px solid white;
-    display: block;
-    margin-right: 30px;
-    }
-
-.list-department li{
-    background-color: red;
-    list-style: none;
-    margin: 10px 65px 10px 0px;
-}    
 .menu__desc{
     line-height: 20px;
     font-size: 14px;
     padding-left: 10px;
-  
 }
 .menu__resume{
     line-height: 20px;
     font-size: 14px;
     padding-left: 10px;
-
 }
 h4{
     font-size: 16px;
     margin: 0;
     font-weight: 900;
 }
-.footer__area .widget__title-text{
+.footer__area .widget__title__text{
     color: white;
     background-color:#0e0e0e;
 }
