@@ -123,6 +123,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 125px;
 }
 .banner__options{
     display: flex;
