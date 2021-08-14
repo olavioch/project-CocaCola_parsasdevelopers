@@ -31,6 +31,9 @@
 .is--bar-black:hover{
     background-color:white;
 }
+
+
+
 /*Geral*/
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -54,6 +57,8 @@ a{
     color:#7d7d7d;
 }
 
+
+
 /*paleta de cores*/
 .red{
     background-color: red;
@@ -67,6 +72,9 @@ a{
 
 
 /*header*/
+.navbar__mobile{
+    display: none;
+}
 .navbar{
     display: flex;
     height: 80px;
@@ -108,7 +116,6 @@ a{
     background-image: url(image/Coca-Cola.png);
     background-position: center;
     background-size: cover;
-    height: 500px;
     justify-content: center;
 }
 .banner__headline{
@@ -118,7 +125,6 @@ a{
     justify-content: center;
 }
 .banner__options{
-    height: 210px;
     display: flex;
 }
 .banner__headline h1{
@@ -354,4 +360,47 @@ span{
 }
 .footer__area li{
     margin-bottom: 15px;
+}
+
+
+/*media querie*/
+@media(max-width: 770px){
+    .banner__options, .footer__menu, .footer__area{
+        flex-direction: column;
+    }
+    .geral .widget__body{
+    grid-template-areas: 
+    'item1'
+    'item2'
+    'item3'
+    'item4';
+    justify-items: center;
+    }
+    aside{
+        width: 70%;
+    }
+}
+
+@media (max-width: 620px){
+    .navbar__mobile{
+        display: block;
+        margin-right: 10px;
+    }
+    .navbar__list{
+        display: none;
+    }
+}
+@media(max-width: 569px){
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+     .geral .widget__body{
+        justify-items: normal;
+     }
+     .news__box{
+        max-width: 400px;
+     }
 }
